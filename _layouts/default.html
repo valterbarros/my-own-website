@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    <section class="box-intro box-intro-filter">
+      <div class="main-section">
+        <img class="main-presentation-photo" src="{{ "assets/images/eu.jpg" | relative_url }}" alt="It's me.">
+        <h1 id="header-title">Valter Barros</h1>
+        <h2>Desenvolvedor Web - Ruby on Rails</h2>
+      </div>
+    </section>
+
+    {% include about.html %}
+
+    {% include skills.html %}
+
+    {% include portfolio.html %}
+
+    <section class="section-posts">
+      <div class="container">
+        <h2 class="text-center">Posts</h2>
+        <div class="row">
+          {% for post in site.categories.default %}
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <img src="{{ post.thumbnail }}" alt="" srcset="">
+                  <h3>{{ post.title }}</h3>
+                  {{ post.content }}
+                </div>
+              </div>
+            </div> 
+          {% endfor %}
+        </div>
+    </section>
+
+    {% include contato.html %}
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
