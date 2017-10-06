@@ -1,3 +1,7 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
 /*general styles*/
 html {
   background:red;
@@ -142,7 +146,7 @@ p{
 }
 
 .skill-icon{
-  background-image: url(../images/spritesheet_skill-icon.png);
+  background-image: url(/assets/images/spritesheet_skill-icon.png);
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
@@ -323,3 +327,4 @@ ul li a.social-btn:hover{
 }
 
 /*Footer end*/
+

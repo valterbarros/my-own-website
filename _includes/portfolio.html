@@ -1,0 +1,36 @@
+<section class="section-portifolio">
+  <div class="portifolio-gallery container">
+    <h2>Portfolio</h2>  
+    <div class="row">
+        {% for post in site.categories.portfolio %}
+          <figure class="gallery-item col-sm-4">
+              <h4>{{ post.title }}</h4>
+              <p>
+                {{ post.content }}
+              </p>
+            </figure>
+        {% endfor %}
+      <!-- <figure class="gallery-item col-sm-4">
+        <h4>ClassGame</h4>
+        <p>Uma plataforma de cursos com gamificação onde você pode aprender jogando. Feito utilizando <b>Ruby on Rails</b> como backend.</p>
+        <a href="https://classgame.herokuapp.com" target="_blank">
+          <img src="{{ "assets/images/classgame.png" }}" alt=""/>   
+        </a>
+      </figure>
+      <figure class="gallery-item col-sm-4">
+        <h4>Meu Site</h4>
+        <p>Meu site pessoal desenvolvido por mim, à tempos era minha vontade e agora finalmente está ficando como eu queria.</p>
+        <a href="#">
+          <img src="{{ "assets/images/valterbarrosblog.png" }}" alt=""/>
+        </a>
+      </figure>
+      <figure class="gallery-item col-sm-4">
+        <h4>Meu Github</h4>
+        <p>Github é uma rede social para programadores é possivel postar projetos inteiros grandes projetos o utilizam como angular, atom, ruby on rails e outros.</p>
+        <a href="https://github.com/valterbarros" target="_blank">
+          <img src="{{ "assets/images/perfilgithub.png" }}" alt=""/>
+        </a>
+      </figure> -->
+    </div>
+  </div>
+</section>
