@@ -1,1 +1,4 @@
 imgs habilidades/
+node_modules
+dist
+.cache
