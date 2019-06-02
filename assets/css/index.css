@@ -261,8 +261,6 @@ h2{
 }
 
 .panel{
-  #box-shadow:5px 10px 15px #ddd;
-  #border:0;
   height: 450px;
 }
 
@@ -327,7 +325,8 @@ ul li a.social-btn:hover{
   background-color: #e6e6e6;
 }
 
-.footer-page p {}
+.footer-page p {
+}
 
 .content-footer{
   width: 100%;
