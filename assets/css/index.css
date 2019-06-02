@@ -7,10 +7,6 @@ body {
   color: var(--black)
 }
 
-html {
-  background:red;
-}
-
 *{
   padding: 0;
   margin: 0;
@@ -72,12 +68,20 @@ h2{
   z-index: 2;
 }
 
-.main-description {
-  max-width: 30em;
+@media (max-width:767px){
+  .main-section{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .main-description {
+    max-width: 20em;
+  }
 }
 
-.main-image {
-  margin-right: 3em;
+.main-description {
+  max-width: 30em;
 }
 
 #header-title {
@@ -105,7 +109,7 @@ h2{
   }
   
   .box-intro{
-    height: calc(100vh - 45px);
+    height: calc(80vh);
   }
 }
 
@@ -304,7 +308,7 @@ ul li a.social-btn{
 }
 
 ul li a.social-btn:hover{
-  color: #1abc9c;
+  color: #d8c7a0;
   transition: all 0.2s linear;
   text-decoration: none !important;
 }
