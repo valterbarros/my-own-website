@@ -1,17 +1,21 @@
 /*general styles*/
-html {
-  background:red;
+:root {
+  --black: #333;
+}
+
+body {
+  color: var(--black)
 }
 
 *{
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: 'Nunito Sans', sans-serif;
 }
 
 section:not(.box-intro){
-  padding:70px 0;
+  padding: 70px 0;
 }
 
 @media (max-width:767px){
@@ -20,7 +24,7 @@ section:not(.box-intro){
   }
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
@@ -35,9 +39,6 @@ h2{
   font-size:2.6em;
 }
 
-p{
-  color:white;
-}
 /*general styles end*/
 
 /*main*/
@@ -53,13 +54,46 @@ p{
 }
 
 .box-intro{
-  text-align: center;
-  padding-top:20vh;
-  background: url(/assets/images/cover.jpg) no-repeat bottom center scroll;
+  padding-top: 10vh;
+  background-color: #f7f1e3;
   background-size: cover;
   width:100%;
-  color:white;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 40em);
+}
+
+.main-section{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  z-index: 2;
+}
+
+@media (max-width:767px){
+  .main-section{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .main-description {
+    max-width: 20em;
+  }
+}
+
+.main-description {
+  max-width: 30em;
+}
+
+#header-title {
+  color: var(--black);
+  font-size: 3em;
+}
+
+#subtitle {
+  margin: 0;
+  margin-bottom: .5em;
+  color: var(--black);
+  font-size: 1.7em;
 }
 
 .box-intro h2{
@@ -75,24 +109,8 @@ p{
   }
   
   .box-intro{
-    height: calc(100vh - 45px);
+    height: calc(80vh);
   }
-}
-
-.box-intro-filter:after{
-  content:"";
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  top:0;
-  left:0;
-  z-index:1;
-  background-color:rgba(0,0,0,0.3); 
-}
-
-.box-intro-filter{
-  position:relative;
 }
 
 .main-presentation-photo{
@@ -107,37 +125,41 @@ p{
     max-width: 150px;
   }
 }
-
-.main-section{
-  #padding: 100px 0;
-  #margin-top: 20vh;
-  z-index:2;
-  position:relative;
-}
 /*main end*/
 
 /*section about*/
-.section-about{
-  text-align: center;
+.section-experiences{
   background: white;
   height: auto;
 }
 
-.section-about p{
-  color:black;
-}
-
-.section-about .description{
+.section-experiences .experiences-list{
   max-width: 533px;
   margin:0 auto;
 }
 
+.experience-subtitle{
+  font-weight: 600;  
+}
+
 /*section about end*/
+
+/* section education*/
+
+
+.education-subtitle {
+  font-weight: 600;
+}
+
+.education-list {
+  max-width: 533px;
+  margin:0 auto;
+}
+/* section education end*/
 
 /*section skills*/
 
 .section-skills h2{
-  color: black;
   margin-bottom: 50px;
 }
 
@@ -155,14 +177,19 @@ p{
   background-position: 0px 0px;
 }
 
-.skill-icon.bootstrap{
+.skill-icon.ruby{
   width:50px;
-  background-position: -65px 0px;
+  background-position: -99999999px 0px;
 }
 
 .skill-icon.javascript{
   width:50px;
   background-position: -130px 0px;
+}
+
+.skill-icon.jquery{
+  width:50px;
+  background-position: -99999999px 0px;
 }
 
 .skill-icon.html5{
@@ -180,33 +207,30 @@ p{
   background-position: -315px 0px;
 }
 
+.skill-icon.git{
+  width:50px;
+  background-position: -999999px 0px;
+}
+
 .skill-icon.trello{
   width:50px;
   background-position: -380px 0px;
 }
 
-.skill-icon.react{
-  width:55px;
-  background-position: -444px 0px;
-}
-
-.skill-icon.angular{
+.skill-icon.vue{
   width:50px;
-  background-position: -508px 0px;
+  background-position: -99999px 0px;
 }
-
 
 /*section skills end*/
 
 /*Section portifolio*/
 .section-portifolio{
   text-align: center;
-  color: black;
   height: auto;
 }
 
 .section-portifolio h2{
-  color: black;
   margin-bottom: 50px;
 }
 
@@ -224,7 +248,6 @@ p{
 }
 
 .gallery-item p{
-  color:black;
   margin:0 0 10px;
 }
 
@@ -242,14 +265,9 @@ p{
 }
 
 .panel{
-  #box-shadow:5px 10px 15px #ddd;
-  #border:0;
   height: 450px;
 }
 
-.panel-body>p{
-  color:black;
-}
 
 /*
 .link-blog{
@@ -284,19 +302,26 @@ p{
 }
 
 ul li a.social-btn{
-  color: black;
+  color: var(--black);
   text-decoration: none;
   margin:10px;
 }
 
 ul li a.social-btn:hover{
-  color: #1abc9c;
+  color: #d8c7a0;
   transition: all 0.2s linear;
   text-decoration: none !important;
 }
 
 /*Social medias end*/
-/*Section about end*/
+
+/* Section informations */
+.section-informations .description{
+  max-width: 533px;
+  margin: 0 auto;
+}
+/* Section informations */
+
 
 /*Footer*/
 .footer-page{
@@ -304,8 +329,7 @@ ul li a.social-btn:hover{
   background-color: #e6e6e6;
 }
 
-.footer-page p{
-  color: black;
+.footer-page p {
 }
 
 .content-footer{
@@ -315,11 +339,8 @@ ul li a.social-btn:hover{
 
 .footer-page{
   text-align: center;
-  color:black;
 }
 
-.copyright li{
-  color:black;
-}
+.copyright li {}
 
 /*Footer end*/
