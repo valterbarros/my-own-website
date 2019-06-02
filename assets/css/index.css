@@ -54,7 +54,9 @@ h2{
 }
 
 .box-intro{
-  padding-top: 10vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   background-color: #f7f1e3;
   background-size: cover;
   width:100%;
@@ -81,6 +83,7 @@ h2{
 }
 
 .main-description {
+  padding: 1em;
   max-width: 30em;
 }
 
