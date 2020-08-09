@@ -1,2 +1,2 @@
 # My-own-website
-Make in html/css bootstrap
+builded in html/css bootstrap

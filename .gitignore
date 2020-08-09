@@ -2,3 +2,4 @@ imgs habilidades/
 node_modules
 dist
 .cache
+.DS_store

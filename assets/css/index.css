@@ -185,6 +185,11 @@ h2{
   background-position: -99999999px 0px;
 }
 
+.skill-icon.angular{
+  width:50px;
+  background-position: -509px 0px;
+}
+
 .skill-icon.javascript{
   width:50px;
   background-position: -130px 0px;
@@ -221,6 +226,11 @@ h2{
 }
 
 .skill-icon.vue{
+  width:50px;
+  background-position: -99999px 0px;
+}
+
+.skill-icon.ionic{
   width:50px;
   background-position: -99999px 0px;
 }
