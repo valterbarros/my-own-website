@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <!-- Facebook Pixel Code -->
-  <script>
+  <script defer>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -22,17 +22,16 @@
     fbq('init', '486065615285591');
     fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
+  <script defer>
+    fbq('track', 'ViewContent');
+  </script>
+  <noscript defer><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=486065615285591&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
-  <script>
-    fbq('track', 'ViewContent');
-  </script>
-
   <section class="box-intro">
     <div class="main-section">
       <div class="main-image">
@@ -43,7 +42,7 @@
         <h1 id="header-title">Valter Barros</h1>
         <h2 id="subtitle">Web Developer</h2>
         <p style="color: black;">
-          Gruated in system analysis every day trying improve my skills with programing, english, and communication with others. Currently working at <a href="https://tidy.com">tidy.com </a> as frontend developer.
+          Graduated from system analysis every day trying improve my skills with programing, english, and communication with others. Currently working at <a href="https://tidy.com">tidy.com </a> as frontend developer.
         </p>
       </div>
     </div>
